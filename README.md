@@ -75,14 +75,15 @@ Benefits
 📸 Phase 2 Screenshots
  1. Queue Job Dispatch
    
-   <img width="1454" height="322" alt="Screenshot 2025-12-24 223810" src="https://github.com/user-attachments/assets/2936283e-1d4f-4e6e-baa1-b9d6f2957dda" />
+ <img width="1454" height="322" alt="Screenshot 2025-12-24 223810" src="https://github.com/user-attachments/assets/2936283e-1d4f-4e6e-baa1-b9d6f2957dda" />
   
- 2. Queue Worker Running
+2. Queue Worker Running
 
-     <img width="769" height="96" alt="Screenshot 2025-12-24 223903" src="https://github.com/user-attachments/assets/3e630efa-a493-4578-9519-8174cf59b508" />
- 3. Node LLM Processing
+<img width="769" height="96" alt="Screenshot 2025-12-24 223903" src="https://github.com/user-attachments/assets/3e630efa-a493-4578-9519-8174cf59b508" />
 
-     <img width="594" height="253" alt="Screenshot 2025-12-24 224020" src="https://github.com/user-attachments/assets/572727fe-6e0e-438a-be4a-907e7e0a1291" />
+3. Node LLM Processing
+
+<img width="594" height="253" alt="Screenshot 2025-12-24 224020" src="https://github.com/user-attachments/assets/572727fe-6e0e-438a-be4a-907e7e0a1291" />
  
  🎨 Phase 3: Frontend (React)
   Description
@@ -96,14 +97,14 @@ Benefits
   3. Pagination support.
   4. Loading and empty states handled.
 
-📸 Phase 3 Screenshots
- 1. Frontend UI
+📸Phase 3 Screenshots
+1. Frontend UI
   
-   <img width="1226" height="678" alt="Screenshot 2025-12-24 224125" src="https://github.com/user-attachments/assets/126a9919-7c29-4bcc-85f5-f4062e1896e5" />
+ <img width="1226" height="678" alt="Screenshot 2025-12-24 224125" src="https://github.com/user-attachments/assets/126a9919-7c29-4bcc-85f5-f4062e1896e5" />
 
- 2. Pagination
+2. Pagination
   
-   <img width="407" height="108" alt="Screenshot 2025-12-24 224132" src="https://github.com/user-attachments/assets/3fa9e1f7-ad78-4020-8af2-d7af82859fa1" />
+ <img width="407" height="108" alt="Screenshot 2025-12-24 224132" src="https://github.com/user-attachments/assets/3fa9e1f7-ad78-4020-8af2-d7af82859fa1" />
 
 🔐 Environment Configuration & Security
  1. .env files are NOT committed to GitHub.
@@ -113,9 +114,11 @@ Benefits
 📸 Phase 4: GitHub Repository
  1.  Clean Repository Structure
 
-     <img width="920" height="605" alt="Screenshot 2025-12-24 224352" src="https://github.com/user-attachments/assets/bfeaf109-2622-41c6-875e-ff5347e3cefb" />
+<img width="920" height="605" alt="Screenshot 2025-12-24 224352" src="https://github.com/user-attachments/assets/bfeaf109-2622-41c6-875e-ff5347e3cefb" />
+
 
 ▶️ How to Run the Project (Local)
+
 1. Backend
 
 cd backend
@@ -128,6 +131,7 @@ php artisan serve
         
 php artisan queue:work
 
+
 2. Node LLM Service
 
 cd llm-node
@@ -136,6 +140,7 @@ npm install
 
 npm start
 
+
 3.Frontend
 
 cd frontend
@@ -143,6 +148,7 @@ cd frontend
 npm install
 
 npm start
+
 
 📌 Notes & Limitations
   
@@ -162,3 +168,36 @@ npm start
   Asynchronous system design
   
   Clean architecture and secure practices
+
+🧩 Architecture & Data Flow
+
+BeyondChats Blog
+        ↓
+Node.js Scraper (Cheerio)
+        ↓
+MySQL Database
+        ↓
+Laravel REST APIs
+        ↓
+Queue Jobs
+        ↓
+Node LLM Service (Summary + Sentiment)
+        ↓
+React Frontend (Live)
+
+
+🌐 Live Frontend Demo
+
+ The React frontend for this project has been deployed on Vercel:
+
+ 👉 https://beyondchats-assignment-l4xv.vercel.app/
+
+This live demo displays:
+ 
+ Original scraped articles from BeyondChats
+ 
+ Updated summaries and sentiment analysis
+ 
+ Pagination for browsing articles
+
+Note: Backend (Laravel API) and Node LLM service are currently running locally.
