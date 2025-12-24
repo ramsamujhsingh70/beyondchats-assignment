@@ -199,6 +199,10 @@ Node LLM Service (Summary + Sentiment)
 React Frontend (Live)
 
 
+<img width="353" height="612" alt="image" src="https://github.com/user-attachments/assets/75a6aab7-f9f6-40a6-a551-981914786c33" />
+
+
+
 🌐 Live Frontend Demo
 
  The React frontend for this project has been deployed on Vercel:
