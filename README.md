@@ -171,18 +171,31 @@ npm start
 
 🧩 Architecture & Data Flow
 
+
 BeyondChats Blog
-        ↓
+     
+         ↓
+
 Node.js Scraper (Cheerio)
-        ↓
-MySQL Database
-        ↓
+   
+         ↓
+
+ MySQL Database
+  
+         ↓
+
 Laravel REST APIs
-        ↓
+   
+         ↓
+
 Queue Jobs
-        ↓
+  
+         ↓
+
 Node LLM Service (Summary + Sentiment)
-        ↓
+   
+         ↓
+
 React Frontend (Live)
 
 
