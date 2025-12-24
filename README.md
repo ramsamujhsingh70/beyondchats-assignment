@@ -119,7 +119,7 @@ Benefits
 
 ▶️ How to Run the Project (Local)
 
-1. Backend
+1.Backend
 
 cd backend
  
@@ -132,7 +132,7 @@ php artisan serve
 php artisan queue:work
 
 
-2. Node LLM Service
+2.Node LLM Service
 
 cd llm-node
 
